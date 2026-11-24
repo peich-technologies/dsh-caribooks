@@ -1,0 +1,25 @@
+{
+  "name": "dsh-caribooks",
+  "description": "Caribooks plugin for DeepSeek Harness: your QuickBooks Online books in conversations, through Caribooks' hosted MCP server",
+  "version": "0.1.0",
+  "icon": "./icon.svg",
+  "type": "module",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "author": "Peich Technologies Inc.",
+  "homepage": "https://caribooks.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peich-technologies/dsh-caribooks.git"
+  },
+  "keywords": ["dsh-plugin", "deepseek-harness", "quickbooks", "mcp", "caribooks"],
+  "files": ["icon.svg", "lib/index.js", "locale/*.json", "cordis.patch.yml"],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "*"
+  }
+}
